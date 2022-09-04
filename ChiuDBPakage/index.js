@@ -24,6 +24,38 @@ class ChiuDB {
 
 module.exports = ChiuDB
 
+
+
+
+
+
+
+
+
+
+
+async function idk() {
+    const fetchs = await fetch('http://localhost:5000/find/link', {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({status: "ok"}),
+        cache: 'no-cache'
+    })
+    const json = await fetchs.json()
+    // console.log(json)
+}
+idk()
+
+
+
+
+
+
+
+
+
+
+
 // function init() {
 //     let fileContent = fs.readFileSync("./file.txt", "utf-8"); let fileContentArray = []
 //     fileContent = fileContent.split(/\n/g); fileContent.pop()

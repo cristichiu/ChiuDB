@@ -2,11 +2,13 @@ const express = require("express")
 const app = express()
 const router = express.Router()
 
-app.set('view engine', 'ejs');
 app.listen(5000)
 
+router.get("/link", (req, res) => {
+  res.send(200)
+})
 router.use(express.json({limit: '1mb'}))
-router.post("/finder", (req, res) => {
+router.post("/link", (req, res) => {
   console.log(req.body)
   res.json({ test: "bine" })
 })
