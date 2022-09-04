@@ -1,0 +1,12 @@
+{
+  "name": "chiudb",
+  "version": "1.0.0",
+  "description": "cea mai baza de date",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
