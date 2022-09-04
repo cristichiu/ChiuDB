@@ -1,28 +1,28 @@
-const fs = require("fs")
+// const fs = require("fs")
 
-class ChiuDB {
-    constructor(link) {
-        if(!link) console.log("nu-i link")
-        this.link = link
-    }
+// class ChiuDB {
+//     constructor(link) {
+//         if(!link) console.log("nu-i link")
+//         this.link = link
+//     }
 
-    create() { return require("./function/create") }
-    find() { return require("./function/simpleFind/find") }
-    findOne() { return require("./function/simpleFind/findOne") }
-    findAndUpdate() { return require("./function/simpleFind/findAndUpdate") }
-    findOneAndUpdate() { return require("./function/simpleFind/findOneAndUpdate") }
-    findAndDelete() { return require("./function/simpleFind/findAndDelete") }
-    findOneAndDelete() { return require("./function/simpleFind/findOneAndDelete") }
+//     create() { return require("./function/create") }
+//     find() { return require("./function/simpleFind/find") }
+//     findOne() { return require("./function/simpleFind/findOne") }
+//     findAndUpdate() { return require("./function/simpleFind/findAndUpdate") }
+//     findOneAndUpdate() { return require("./function/simpleFind/findOneAndUpdate") }
+//     findAndDelete() { return require("./function/simpleFind/findAndDelete") }
+//     findOneAndDelete() { return require("./function/simpleFind/findOneAndDelete") }
 
-    MC_find() { return require("./function/multiConditionFind/MC_find") }
-    MC_findOne() { return require("./function/multiConditionFind/MC_findOne") }
-    MC_findAndUpdate() { return require("./function/multiConditionFind/MC_findAndUpdate") }
-    MC_findOneAndUpdate() { return require("./function/multiConditionFind/MC_findOneAndUpdate") }
-    MC_findAndDelete() { return require("./function/multiConditionFind/MC_findAndDelete") }
-    MC_findOneAndDelete() { return require("./function/multiConditionFind/MC_findOneAndDelete") }
-}
+//     MC_find() { return require("./function/multiConditionFind/MC_find") }
+//     MC_findOne() { return require("./function/multiConditionFind/MC_findOne") }
+//     MC_findAndUpdate() { return require("./function/multiConditionFind/MC_findAndUpdate") }
+//     MC_findOneAndUpdate() { return require("./function/multiConditionFind/MC_findOneAndUpdate") }
+//     MC_findAndDelete() { return require("./function/multiConditionFind/MC_findAndDelete") }
+//     MC_findOneAndDelete() { return require("./function/multiConditionFind/MC_findOneAndDelete") }
+// }
 
-module.exports = ChiuDB
+// module.exports = ChiuDB
 
 
 
@@ -42,7 +42,7 @@ async function idk() {
         cache: 'no-cache'
     })
     const json = await fetchs.json()
-    // console.log(json)
+    console.log(json)
 }
 idk()
 
