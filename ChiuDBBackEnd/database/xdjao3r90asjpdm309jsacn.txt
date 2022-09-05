@@ -1,0 +1,69 @@
+{"userID":"530059275754799116","userName":"cristichiu#6517","GVoiceXP":0,"GInviteXP":1800,"GMessageXP":3337,"SVoiceXP":0,"SInviteXP":1800,"SMessageXP":3337}
+{"userID":"987034028043563090","userName":"Razutzuﾉᴸᵂ#3434","GVoiceXP":524,"GInviteXP":225,"GMessageXP":3868,"SVoiceXP":524,"SInviteXP":225,"SMessageXP":3868}
+{"userID":"728705253012275286","userName":"iamome.#7422","GVoiceXP":39996,"GInviteXP":6450,"GMessageXP":6750,"SVoiceXP":39996,"SInviteXP":6450,"SMessageXP":6750}
+{"userID":"938825934302248961","userName":"AisUmarutz#6699","GVoiceXP":0,"GInviteXP":0,"GMessageXP":4749,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":4749}
+{"userID":"820258919435337729","userName":"NebunuWeedﾉ⁴ᶠ#2917","GVoiceXP":3081,"GInviteXP":225,"GMessageXP":5274,"SVoiceXP":3081,"SInviteXP":225,"SMessageXP":5274}
+{"userID":"785564898733719582","userName":"╰☆ ˢᵗʳᵃʷᵇᵉʳʳʸ ☆╮#9296","GVoiceXP":0,"GInviteXP":0,"GMessageXP":5,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":5}
+{"userID":"915301084917018675","userName":"alin.#6559","GVoiceXP":10240,"GInviteXP":225,"GMessageXP":1253,"SVoiceXP":10240,"SInviteXP":225,"SMessageXP":1253}
+{"userID":"902847216136388648","userName":"! 𝕲𝖓𝖘𝖔#3966","GVoiceXP":0,"GInviteXP":0,"GMessageXP":195,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":195}
+{"userID":"761831841699069952","userName":"Vladutzᵍᵛ#2074","GVoiceXP":403,"GInviteXP":0,"GMessageXP":176,"SVoiceXP":403,"SInviteXP":0,"SMessageXP":176}
+{"userID":"986535145790115872","userName":"alexandrou#4922","GVoiceXP":0,"GInviteXP":0,"GMessageXP":453,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":453}
+{"userID":"415088611848093696","userName":"Qwezy#5256","GVoiceXP":0,"GInviteXP":1875,"GMessageXP":9244,"SVoiceXP":0,"SInviteXP":1875,"SMessageXP":9244}
+{"userID":"900356767140159550","userName":"Vladutz_DK#0969","GVoiceXP":0,"GInviteXP":150,"GMessageXP":51,"SVoiceXP":0,"SInviteXP":150,"SMessageXP":51}
+{"userID":"919686000001835098","userName":"idk#9518","GVoiceXP":0,"GInviteXP":0,"GMessageXP":88,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":88}
+{"userID":"807355537561223250","userName":"Bogdan.#5108","GVoiceXP":0,"GInviteXP":0,"GMessageXP":33,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":33}
+{"userID":"855080429110427680","userName":"liuon#5519","GVoiceXP":0,"GInviteXP":0,"GMessageXP":146,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":146}
+{"userID":"686672511215337475","userName":"annaa_#9091","GVoiceXP":0,"GInviteXP":0,"GMessageXP":36,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":36}
+{"userID":"984775500746616853","userName":"l3na#0276","GVoiceXP":21,"GInviteXP":0,"GMessageXP":77,"SVoiceXP":21,"SInviteXP":0,"SMessageXP":77}
+{"userID":"352371268747788291","userName":"Just4Cheatsﾉᴸᵂ#9999","GVoiceXP":0,"GInviteXP":150,"GMessageXP":96,"SVoiceXP":0,"SInviteXP":150,"SMessageXP":96}
+{"userID":"943606887184756816","userName":"koan#9999","GVoiceXP":0,"GInviteXP":150,"GMessageXP":1117,"SVoiceXP":0,"SInviteXP":150,"SMessageXP":1117}
+{"userID":"282859044593598464","userName":"ProBot ✨#5803","GVoiceXP":0,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":0}
+{"userID":"782484330760896533","userName":"!    𝐏𝐨𝐥𝐨𝐧𝐢𝐜 🥢ﾉᵃˡⁿ#1000","GVoiceXP":0,"GInviteXP":150,"GMessageXP":115,"SVoiceXP":0,"SInviteXP":150,"SMessageXP":115}
+{"userID":"820220655760834570","userName":"Anchorⁱᶜᵉ#4223","GVoiceXP":0,"GInviteXP":0,"GMessageXP":6,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":6}
+{"userID":"477091635357024257","userName":"KristianMD#1560","GVoiceXP":64,"GInviteXP":0,"GMessageXP":13,"SVoiceXP":64,"SInviteXP":0,"SMessageXP":13}
+{"userID":"453530722557493249","userName":"Andreeaᵍᵛ#2817","GVoiceXP":15,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":15,"SInviteXP":0,"SMessageXP":0}
+{"userID":"720271797152514048","userName":"s.patriciaᵍᵛ#2644","GVoiceXP":48,"GInviteXP":0,"GMessageXP":2,"SVoiceXP":48,"SInviteXP":0,"SMessageXP":2}
+{"userID":"773954450074501150","userName":"𝙎𝙖𝙡𝙖𝙟𝙖𝙣 ᵍᵛ#1776","GVoiceXP":37,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":37,"SInviteXP":0,"SMessageXP":0}
+{"userID":"740875952028123187","userName":"! s#6969","GVoiceXP":0,"GInviteXP":0,"GMessageXP":106,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":106}
+{"userID":"585478488124030977","userName":"Codimaneliu 2#3886","GVoiceXP":0,"GInviteXP":0,"GMessageXP":51,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":51}
+{"userID":"814491435742658600","userName":"jecc#4320","GVoiceXP":0,"GInviteXP":0,"GMessageXP":68,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":68}
+{"userID":"895053321965035551","userName":"minola#6969","GVoiceXP":0,"GInviteXP":0,"GMessageXP":23,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":23}
+{"userID":"850095607250026517","userName":"ale.#7225","GVoiceXP":0,"GInviteXP":0,"GMessageXP":10,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":10}
+{"userID":"440425773468483584","userName":"🎮MDCLA Ryu✨#3168","GVoiceXP":0,"GInviteXP":0,"GMessageXP":8,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":8}
+{"userID":"441263806832967691","userName":"Titan#4481","GVoiceXP":8,"GInviteXP":0,"GMessageXP":81,"SVoiceXP":8,"SInviteXP":0,"SMessageXP":81}
+{"userID":"443848258071035904","userName":"Marius Steel#0727","GVoiceXP":87,"GInviteXP":600,"GMessageXP":31,"SVoiceXP":87,"SInviteXP":600,"SMessageXP":31}
+{"userID":"832954318755201024","userName":"Silver_cane4f#1134","GVoiceXP":470,"GInviteXP":0,"GMessageXP":1114,"SVoiceXP":470,"SInviteXP":0,"SMessageXP":1114}
+{"userID":"986733868881170536","userName":"ᵇᵉˢᵗJxxpieﾉˢʱʷᵀᴸ#0001","GVoiceXP":0,"GInviteXP":0,"GMessageXP":7,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":7}
+{"userID":"952641627569139752","userName":"dinamo#1337","GVoiceXP":0,"GInviteXP":0,"GMessageXP":29,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":29}
+{"userID":"701023784941125652","userName":"DaveB#0210","GVoiceXP":6,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":6,"SInviteXP":0,"SMessageXP":0}
+{"userID":"774267129142050856","userName":"Davidutzu o_o#2322","GVoiceXP":0,"GInviteXP":0,"GMessageXP":3,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":3}
+{"userID":"761611777023803403","userName":"Acadeaua#4146","GVoiceXP":106,"GInviteXP":0,"GMessageXP":72,"SVoiceXP":106,"SInviteXP":0,"SMessageXP":72}
+{"userID":"921421646273871903","userName":"★𝗮𝗸𝗮𝗻𝗲#4680","GVoiceXP":0,"GInviteXP":0,"GMessageXP":156,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":156}
+{"userID":"984108994492788767","userName":"ᶜᴿᴬᶻᵞ̶P̶r̶o̶ ̶A̶l̶p̶h̶a̶ ཌ#0772","GVoiceXP":0,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":0}
+{"userID":"889048325666508800","userName":"elenasalajan#1394","GVoiceXP":388,"GInviteXP":0,"GMessageXP":297,"SVoiceXP":388,"SInviteXP":0,"SMessageXP":297}
+{"userID":"792756278031286272","userName":"Strugure🍇#2158","GVoiceXP":66,"GInviteXP":600,"GMessageXP":117,"SVoiceXP":66,"SInviteXP":600,"SMessageXP":117}
+{"userID":"827842408652734526","userName":"emilian#0142","GVoiceXP":0,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":0}
+{"userID":"806284625747247104","userName":"Hiso#3505","GVoiceXP":0,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":0}
+{"userID":"400714692647190528","userName":"_f4ver_#6153","GVoiceXP":0,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":0}
+{"userID":"749330665178267648","userName":"♫ ✪Re(M)us✪™♫#9258","GVoiceXP":0,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":0}
+{"userID":"992851952121688125","userName":"Afin#8949","GVoiceXP":0,"GInviteXP":0,"GMessageXP":49,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":49}
+{"userID":"984811494678069279","userName":"Levicutzᴬᴿ#0666","GVoiceXP":0,"GInviteXP":0,"GMessageXP":9,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":9}
+{"userID":"662434364197437491","userName":"Cristianbv#2000","GVoiceXP":0,"GInviteXP":300,"GMessageXP":247,"SVoiceXP":0,"SInviteXP":300,"SMessageXP":247}
+{"userID":"585142426482769942","userName":"NeltroX#9855","GVoiceXP":0,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":0}
+{"userID":"710118780809904171","userName":"Aventis#4872","GVoiceXP":0,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":0}
+{"userID":"921725507878408202","userName":"PortocalaTheBest#2311","GVoiceXP":0,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":0}
+{"userID":"775058750490542081","userName":"bassyy#4850","GVoiceXP":3,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":3,"SInviteXP":0,"SMessageXP":0}
+{"userID":"497739782630408203","userName":"Coralia#9721","GVoiceXP":0,"GInviteXP":0,"GMessageXP":34,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":34}
+{"userID":"972482453971304499","userName":"Molid#6504","GVoiceXP":0,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":0}
+{"userID":"802981764561502228","userName":"¥.» 𝐟𝐟𝐬.𝐭𝐡𝐞𝐨#2285","GVoiceXP":0,"GInviteXP":0,"GMessageXP":19,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":19}
+{"userID":"777428670478024744","userName":"Zefir007#9949","GVoiceXP":0,"GInviteXP":0,"GMessageXP":2,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":2}
+{"userID":"885656758385778729","userName":"Yukine#1195","GVoiceXP":0,"GInviteXP":0,"GMessageXP":2,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":2}
+{"userID":"1000500584618676365","userName":"wedᴸᵂ#0053","GVoiceXP":179,"GInviteXP":0,"GMessageXP":259,"SVoiceXP":179,"SInviteXP":0,"SMessageXP":259}
+{"userID":"819675444428406805","userName":"ϟpualʸⁿᵍ#1138","GVoiceXP":0,"GInviteXP":0,"GMessageXP":50,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":50}
+{"userID":"658972305078091786","userName":"alcalin.#8228","GVoiceXP":12584,"GInviteXP":0,"GMessageXP":162,"SVoiceXP":12584,"SInviteXP":0,"SMessageXP":162}
+{"userID":"839037433605259264","userName":"☨DemonBabuinul☨#5978","GVoiceXP":66,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":66,"SInviteXP":0,"SMessageXP":0}
+{"userID":"938216899018391583","userName":"9daria#9572","GVoiceXP":0,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":0}
+{"userID":"289411633070211072","userName":".ale3x.#0866","GVoiceXP":193,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":193,"SInviteXP":0,"SMessageXP":0}
+{"userID":"840277755332657173","userName":"xzσт#6150","GVoiceXP":0,"GInviteXP":0,"GMessageXP":0,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":0}
+{"userID":"947832764353380362","userName":"AisUmarutz#0019","GVoiceXP":0,"GInviteXP":0,"GMessageXP":2,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":2}
+{"userID":"947832764353380362","userName":"IDK","GVoiceXP":0,"GInviteXP":0,"GMessageXP":259,"SVoiceXP":0,"SInviteXP":0,"SMessageXP":2}

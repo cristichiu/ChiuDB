@@ -1,18 +1,4 @@
-const find = require("chiudbpakage")
-// -------------------------------------
-async function metoda1() {
-    const d = await find()
-    console.log(d)
-}
-// -------------------------------------
-function metoda2() {
-    find().then(res => console.log(res)).catch(err => console.log(err))
-}
-// -------------------------------------
-async function metoda3() {
-    await find().then(res => console.log(res)).catch(err => console.log(err))
-}
+const ChiuDB = require("chiudbpakage")
 
-metoda1()
-metoda2()
-metoda3()
+const database = new ChiuDB('http://localhost:5000/username=cristichiu/token=xdjao3r90asjpdm309jsacn/password=CeaMaiParola/name=Idk')
+database.findOne({userID: "947832764353380362"}).then(res => console.log(res)).catch(err => console.log(err))

@@ -1,20 +1,9 @@
-const axios = require("axios")
-
-async function find() {
-    let result = "Error"
-    await axios.post('http://localhost:5000/find/link', {
-        status: "ok"
-    }).then(({data}) => {
-        result = data
-    })
-    new Promise((resolve, reject) => {
-        if(result) {
-            resolve(result);
-        } else {
-            reject("Error")
-        }
-    });
-    return result
+class ChiuDB {
+    constructor(link) {
+        this.link = link
+    }
+    find(search) { return require("./function/find")({link: this.link, search}) }
+    findOne(search) { return require("./function/findOne")({link: this.link, search}) }
 }
 
-module.exports = find
+module.exports = ChiuDB
