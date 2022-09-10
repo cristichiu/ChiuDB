@@ -1,16 +1,12 @@
-const fs = require("fs")
-
 function find(req, res) {
     const time = Date.now()
     const { username, token, password, name } = req.params
-    const { search } = req.body
-
+    const { search } = req.body.data
     let result = { status: "Error", message: "Cannot find anythig at find function!" };
 
-    let fileContent = fs.readFileSync(`./database/${token}.txt`, "utf-8"); let fileContentArray = []
-    fileContent = fileContent.split(/\n/g); fileContent.pop()
-    fileContent.forEach(content => { fileContentArray.push(JSON.parse(content)) })
-    fileContent = fileContentArray; fileContentArray = []
+    let fileContent = require("../../general/_fileContentInit")(token)
+
+    if(search == "any") return res.json(fileContent)
     
     if(Object.keys(search).length !=1) return result = "Use function multyFindCondition"
     result = fileContent.filter(content => {
