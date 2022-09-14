@@ -19,35 +19,35 @@ function MC_findAndUpdate(req, res) {
         })
         fs.writeFileSync(`./database/${token}.txt`, require("../../general/_convertArrToString")(fileContent))
         fileContent.splice(number)
-        return res.json(fileContent)
-    }
-
-    const check = []
-    fileContent.forEach(content => {
-        let verify = []
-        Object.keys(search).forEach(key => { verify.push(content[key] == search[key]) })
-        check.push(verify)
-    })
-    let findArray = []
-    check.forEach(c => { if(c.every(element => element == true)) findArray.push(fileContent[check.indexOf(c)]) })
-    result = findArray
-
-    let index = []
-    result.forEach(res => { index.push(fileContent.indexOf(res)) })
-    Object.keys(data).forEach(key => {
-        index.forEach(number => {
-            if(key in fileContent[number]) {
-                fileContent[number][key] = data[key]
-            }
+        res.json(fileContent)
+    } else {
+        const check = []
+        fileContent.forEach(content => {
+            let verify = []
+            Object.keys(search).forEach(key => { verify.push(content[key] == search[key]) })
+            check.push(verify)
         })
-    })
+        let findArray = []
+        check.forEach(c => { if(c.every(element => element == true)) findArray.push(fileContent[check.indexOf(c)]) })
+        result = findArray
 
-    let resultArr = []
-    index.forEach(number => { resultArr.push(fileContent[number]) })
+        let index = []
+        result.forEach(res => { index.push(fileContent.indexOf(res)) })
+        Object.keys(data).forEach(key => {
+            index.forEach(number => {
+                if(key in fileContent[number]) {
+                    fileContent[number][key] = data[key]
+                }
+            })
+        })
 
-    fs.writeFileSync(`./database/${token}.txt`, require("../../general/_convertArrToString")(fileContent))
+        let resultArr = []
+        index.forEach(number => { resultArr.push(fileContent[number]) })
 
-    res.json({ message: "Succesful update Data", result: resultArr })
+        fs.writeFileSync(`./database/${token}.txt`, require("../../general/_convertArrToString")(fileContent))
+
+        res.json({ message: "Succesful update Data", result: resultArr })
+    }
     console.log(`SuccesFull MC_findAndUpdate in ${(Date.now() - time)/1000}s (${Date.now() - time}ms)`)
 }
 
