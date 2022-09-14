@@ -17,26 +17,26 @@ function findOneAndUpdate(req, res) {
             }
         })
         fs.writeFileSync(`./database/${token}.txt`, require("../../general/_convertArrToString")(fileContent))
-        return res.json(content)
+        res.json(content)
+    } else {
+        if(Object.keys(search).length !=1) return res.json("Use function multyFindCondition")
+        result = fileContent.find(content => {
+            if(Object.keys(search)[0] in content) {
+                return content[Object.keys(search)[0]] == search[Object.keys(search)[0]]
+            }
+        })
+
+        let index = fileContent.indexOf(result)
+        Object.keys(data).forEach(key => {
+            if(key in fileContent[index]) {
+                fileContent[index][key] = data[key]
+            }
+        })
+
+        fs.writeFileSync(`./database/${token}.txt`, require("../../general/_convertArrToString")(fileContent))
+
+        res.json({ message: "Succesful update Data", result: fileContent[index] })
     }
-    
-    if(Object.keys(search).length !=1) return result = "Use function MC_findOneAndUpdate"
-    result = fileContent.find(content => {
-        if(Object.keys(search)[0] in content) {
-            return content[Object.keys(search)[0]] == search[Object.keys(search)[0]]
-        }
-    })
-
-    let index = fileContent.indexOf(result)
-    Object.keys(data).forEach(key => {
-        if(key in fileContent[index]) {
-            fileContent[index][key] = data[key]
-        }
-    })
-
-    fs.writeFileSync(`./database/${token}.txt`, require("../../general/_convertArrToString")(fileContent))
-
-    res.json({ message: "Succesful update Data", result: fileContent[index] })
     console.log(`SuccesFull findOneAndUpdate in ${(Date.now() - time)/1000}s (${Date.now() - time}ms)`)
 }
 
