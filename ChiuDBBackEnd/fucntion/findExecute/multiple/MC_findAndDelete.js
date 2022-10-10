@@ -18,6 +18,7 @@ function MC_findAndDelete(req, res) {
             result = fileContent
             fs.writeFileSync(`./database/${token}.txt`, "")
         }
+        if(result == '') result = null
         res.json({result, message: `succesful delete ${number} data`})
     } else {
         const check = []
@@ -36,6 +37,8 @@ function MC_findAndDelete(req, res) {
         })
 
         fs.writeFileSync(`./database/${token}.txt`, require("../../general/_convertArrToString")(fileContent))
+        
+        if(result == '') result = null
     
         res.json({result, message: `Succesful delete ${result.length} data`})
     }

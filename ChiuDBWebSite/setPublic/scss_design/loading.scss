@@ -1,0 +1,11 @@
+.loading {
+    display: flex;
+    .load { width: 20px; height: 20px; border-radius: 50%; background: white; animation: .8s loader infinite; margin: 8px }
+    .load:nth-child(2) { animation-delay: .1s; }
+    .load:nth-child(3) { animation-delay: .2s; }
+}
+@keyframes loader {
+    0% { translate: 0 10px; }
+    25% { translate: 0 -10px; }
+    100% { translate: 0 0; }
+}

@@ -2,12 +2,15 @@ const express = require("express")
 const app = express()
 const router = express.Router()
 const fs = require("fs")
+const bodyParser = require('body-parser')
+const cors = require('cors')
+const chiudbpakage = require("chiudbpakage")
+const login = new chiudbpakage("http://localhost:5000/username=login/token=jjmdosano38nm19nfund83niufnd/password=169hsaiy9duh9dj0adisan/name=loginSystem")
 
 app.listen(5000)
+app.use(cors())
+app.use(bodyParser.urlencoded({ extended: true }))
 
-router.get("/username=:username/token=:token/password=:password/name=:name/property=:property", (req, res) => {
-    res.send(`<h1>${req.params.property}</h1>`)
-})
 router.use(express.json({limit: '1mb'}))
 router.post("/username=:username/token=:token/password=:password/name=:name/property=:property", (req, res) => {
   switch(req.params.property) {
@@ -28,12 +31,41 @@ router.post("/username=:username/token=:token/password=:password/name=:name/prop
   }
 })
 
-const chiudbpakage = require("chiudbpakage")
+router.post("/login", async (req, res) => {
+  const { password, name } = req.body
+  let state = { vpassword: true, vname: true }
+  const userData = await login.MC_findOne({ name: name, password: password }).catch(err => {
+    console.log(err)
+    state.vpassword = false
+    state.vname = false
+  })
+  if(!userData) {
+    state.vpassword = false
+    state.vname = true
+  } else {
+    state.vpassword = true
+    state.vname = true
+  }
+  res.json({state,userData})
+})
 
-const chiudb = new chiudbpakage("http://localhost:5000/username=cristichiu/token=xdjao3r90asjpdm309jsacn/password=CeaMaiParola/name=Idk")
-chiudb.findOne({
-  userName: "cristi"
-}).then(res => console.log(res)).catch(err => console.log(err))
+router.post("/register", async (req, res) => {
+  let state = true
+  const { name, password } = req.body
+  let userData = null
+
+  await login.MC_findOne({ name: name, password: password }).then(data => {
+    !data ? state = true : state = false
+  }).catch(err => console.log(err))
+  if(state) {
+    await login.create({
+      name: name, password: password,
+      dataBase: [],
+      creatingAt: Date.now()
+    }).then(data => { userData = data.insert }).catch(err => console.log(err))
+  }
+  res.json({state,userData})
+})
 
 app.use("/", router)
 console.log("START")

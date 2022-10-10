@@ -25,6 +25,8 @@ function findAndDelete(req, res) {
         })
 
         fs.writeFileSync(`./database/${token}.txt`, require("../../general/_convertArrToString")(fileContent))
+        
+        if(result == '') result = null
 
         res.json({ result, message: `Succesful delete ${result.length} Data` })
     }

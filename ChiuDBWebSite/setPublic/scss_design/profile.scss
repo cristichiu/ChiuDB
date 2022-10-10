@@ -1,0 +1,3 @@
+.createContainer { width: 500px; height: 500px; position: absolute; backdrop-filter: blur(1px); translate: -50% -50%; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+.createContainer input { display: flex; padding: .5rem 1.5rem; color: green; margin: 1rem; }
+.createContainer input::placeholder { color: green }
