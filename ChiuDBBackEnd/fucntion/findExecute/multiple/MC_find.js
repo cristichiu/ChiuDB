@@ -19,6 +19,8 @@ function MC_find(req, res) {
         let findArray = []
         check.forEach(c => { if(c.every(element => element == true)) findArray.push(fileContent[check.indexOf(c)]) })
         result = findArray
+        
+        if(result == '') result = null
     
         res.json(result)
     }

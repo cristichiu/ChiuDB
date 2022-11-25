@@ -1,0 +1,19 @@
+@import './vars/index.scss';
+@import './vars/vars.scss';
+
+.loginDesc { animation: apear .5s ease-in forwards .5s; opacity: 0; }
+.loginContainer { animation: integrateY .5s ease-in forwards .5s; animation: apear .5s ease-in forwards .5s; opacity: 0; translate: 0 100px; position: absolute; width: 100%; min-width: 300px; max-width: 450px; text-align: center; }
+.loginInput { margin-top: 1rem; }
+.loginInput > .inputCont { position: relative; margin: 1rem; }
+.loginInput > div input { padding: 1rem; width: 100%; background: transparent; border: 1px solid rgb(0, 255, 0); border-radius: 15px; outline: none; color: rgb(0, 255, 0); font-size: 1.5rem; font-family: Arial; }
+.loginInput > div { animation: integrateX .5s ease-in forwards .5s; }
+.loginInput > div:nth-child(1) { translate: -100px 0; } // left integrate
+.loginInput > div:nth-child(2) { translate: 100px 0; } // right integrate
+.loginInput > div input:valid ~ span, .loginInput > div input:focus ~ span { padding: 0 1rem; font-size: 1rem; translate: 14px -8px; transition: .3s; background: $background; border-left: 1px solid rgb(0, 255, 0); border-right: 1px solid rgb(0, 255, 0); }
+.placeholder { position: absolute; left: 5px; padding: 1rem; color: $text_normal; font-size: 1.5rem; transition: .5s; font-family: Arial; cursor: text; }
+.loginButtonContainer { margin-top: 1rem; width: 100%; display: flex; justify-content: center; }
+.loginButton { font-size: 1.5rem; padding: .5rem 0; width: 80%; border-radius: 1rem; border: 3px solid $text_dark; background: $background; color: $text_normal; transition: .3s; }
+.loginButton:hover, .loginButton:focus, .loginButton:active {border: 3px solid $text_normal; background: $text_normal; color: white; }
+@keyframes apear { to { opacity: 1; } }
+@keyframes integrateX { to { translate: 0; } }
+@keyframes integrateY { to { translate: 0 $translateDown; } }

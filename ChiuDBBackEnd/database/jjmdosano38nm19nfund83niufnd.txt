@@ -1,0 +1,3 @@
+{"name":"cristichiu","password":"Cristi2005","dataBase":[],"token":"0c1751f7-71e9-4d01-91ea-8784534c23a9","creatingAt":1665492828993}
+{"name":"cristichiu2","password":"nu","dataBase":[],"token":"a6dcd19a-558e-4443-9a1f-fee03d0cf88e","creatingAt":1665494313489}
+{"name":"cristichiu3","password":"da","dataBase":[{"name":"idk","password":"nuj123","creatingAt":1665499875983,"token":"06021ea2-bf86-4e78-99db-7a7f598ba173","user":"cristichiu3"},{"name":"nuj","password":"testing","creatingAt":1665502003332,"token":"eb98fbbc-2e30-44dd-9770-9253f036aade","user":"cristichiu3"}],"token":"2f90a7b0-5f8f-41de-99bc-6782d90edde6","creatingAt":1665494340663}

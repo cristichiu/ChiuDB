@@ -2,7 +2,7 @@ function MC_findOne(req, res) {
     const time = Date.now()
     const { username, token, password, name } = req.params
     const { search } = req.body.data
-    let result = { status: "Error", message: "Cannot find anythig at find function!" };
+    let result = { status: "Error", error: true, message: "Cannot find anythig at MC_findOne function!" };
 
     let fileContent = require("../../general/_fileContentInit")(token)
 
@@ -21,6 +21,7 @@ function MC_findOne(req, res) {
                 if(!finder) { result = fileContent[check.indexOf(c)]; finder = true }
             }
         })
+        if(result.error) result = null;
 
         res.json(result)
     }

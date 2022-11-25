@@ -16,6 +16,8 @@ function findOne(req, res) {
             }
         })
 
+        if(result == '') result = null
+
         res.json(result)
     }
     console.log(`SuccesFull findOne in ${(Date.now() - time)/1000}s (${Date.now() - time}ms)`)

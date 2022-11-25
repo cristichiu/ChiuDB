@@ -26,6 +26,8 @@ function findOneAndDelete(req, res) {
 
         fs.writeFileSync(`./database/${token}.txt`, require("../../general/_convertArrToString")(fileContent))
 
+        if(result == '') result = null
+
         res.json({ message: "Succesful delete one Data", result })
     }
     console.log(`SuccesFull findOneAndDelete in ${(Date.now() - time)/1000}s (${Date.now() - time}ms)`)

@@ -1,0 +1,7 @@
+@import './vars/index.scss';
+@import './vars/vars.scss';
+.loadingSVG { width: 100%; min-width: 100px; max-width: 200px; stroke: $text_normal; position: absolute }
+.loadingSVGfixed { animation: filler .5s ease-in forwards .1s; }
+.loadingSVGanimate > path { --delay: 0; animation: animate 2s ease-out infinite; animation-delay: var(--delay); }
+@keyframes animate { to { stroke-dashoffset: 0; } }
+@keyframes filler { from { fill: transparent; } to { fill: $text_normal; max-width: 300px; translate: 0 $translateUp } }

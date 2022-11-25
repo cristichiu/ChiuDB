@@ -1,0 +1,10 @@
+@import './vars/index.scss';
+.centerChild { display: flex; justify-content: center; align-items: center; }
+.fullCover { width: 100vw; height: 100vh; }
+.colCont { flex-direction: column; }
+.nonDis { display: none; }
+.flexDis { display: flex; }
+body { background: $background; color: $text_normal }
+.description { color: $text_dark; }
+.documentation { position: absolute; font-family: Arial; top: 5px; left: 5px; color: white; font-size: 2rem; animation: slowApear .5s ease-in forwards .5s; opacity: 0; }
+@keyframes slowApear { to{ opacity: 1; } }

@@ -1,0 +1,1 @@
+interface loading { loading: boolean }

@@ -37,6 +37,8 @@ function findAndUpdate(req, res) {
 
         fs.writeFileSync(`./database/${token}.txt`, require("../../general/_convertArrToString")(fileContent))
 
+        if(result == '') result = null
+
         res.json({ message: "Succesful update Data", result })
     }
     console.log(`SuccesFull findAndUpdate in ${(Date.now() - time)/1000}s (${Date.now() - time}ms)`)
