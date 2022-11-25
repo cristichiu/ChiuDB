@@ -1,11 +1,4 @@
-const ChiuDB = require("chiudbpakage")
+const ChiuDB = require("chiudb")
 
-const database = new ChiuDB('http://localhost:5000/username=cristichiu/token=xdjao3r90asjpdm309jsacn/password=CeaMaiParola/name=Idk')
-async function test() {
-    database.findOne({ userID: "53005927sda5754799116" })
-    .then(res => {
-        if(res == "") return console.log("test")
-    })
-    .catch(err => console.log(err))
-}
-test()
+const database = new ChiuDB('https://ChiuDBBackEnd.cristichiu.repl.co/username=cristichiu/token=52e3264b-0579-4f5b-8dce-aa379727f0f5/password=cristian/name=cristichiudb')
+database.findOne("any").then(res => console.log(res))

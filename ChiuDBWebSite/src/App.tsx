@@ -1,52 +1,35 @@
-import { useState } from 'react';
+// ----> General Imports
+import { useState } from "react"
+import { useDispatch } from "react-redux"
+import { bindActionCreators } from "redux"
+import * as action_creator from "./store/userData/action_creator"
+import { useSelector } from "react-redux"
+import { State } from "./store/index"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// ----> Import Components
+import Login from "./components/login"
+import User from "./components/user"
+import Logo from './components/logo'
+// ----> Design Imports
+import '../setPublic/scss/init.scss'
+import '../setPublic/scss/index.scss'
+// --------------------
 
-import IUser from './interface/IUser';
-interface IUserLocal {
-  name: string,
-  password: string
-}
-
-import Login from './component/login';
-import Register from './component/register';
-import Loading from './component/loading';
-import Profile from './component/profile';
-
-import '../setPublic/scss_design/app.scss'
-import '../setPublic/scss_design/init.scss'
-import "../setPublic/scss_design/user.scss"
-
-function App() {
-  const [loading, setLoading] = useState<boolean>(true)
-  window.addEventListener("load", () => setLoading(false))
-
-  const [user, setUser] = useState<IUserLocal>({name: '', password: ''})
-  const [userData, setUserData] = useState<Object>({})
-  function setUserGlobal({ user }: IUser): void {
-    const userI = { name: user.name, password: user.password }
-    setUser(userI); setUserData(userData)
-    window.localStorage.setItem('state', JSON.stringify(userI));
-  }
-
-  window.addEventListener("load", () => {
-    const GetLocalStorage: any = JSON.parse(window.localStorage.getItem('state') || '1')
-    if(GetLocalStorage != 1) {
-      const userI: IUserLocal = { name: GetLocalStorage?.name, password: GetLocalStorage?.password }
-      setUser(userI)
-    }
-  })
-
+const App: React.FC = () => {
+  // UserData redux store init
+  const dispatch = useDispatch()
+  const { addUser } = bindActionCreators(action_creator, dispatch)
+  const state: IUserDataState = useSelector((state: State) => state.userData)
+  // -------------------------
+  const [loading, setLoading] = useState<boolean>(true); window.addEventListener('load', () => { document.getElementsByClassName("loadingSVG")[0].addEventListener('animationiteration', () => { setLoading(false) }) })
+  function LoginElement() { return ( <div className="fullCover colCont centerChild"><Logo loading={loading}/>{ !loading && <Login loading={loading} /> }</div> ) }
+  // -------------------------
   return (
     <Router>
-      { loading && <Loading /> }
+      {!loading && <div className="documentation">Documentation</div>}
       <Routes>
-        <Route path="login" element={ !loading && <Login setUserGlobal={setUserGlobal} />}></Route>
-        <Route path="register" element={ !loading && <Register setUserGlobal={setUserGlobal} />}></Route>
-        <Route path='user/'element={
-          !loading && user.name != '' && user.password != '' ?
-          <Profile user={user} /> :
-          !loading && <Loading />
-        }></Route>
+        <Route path="login" element={<LoginElement />}></Route>
+        <Route path="user" element={<User state={state}/>}></Route>
       </Routes>
     </Router>
   )

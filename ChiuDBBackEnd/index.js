@@ -4,8 +4,10 @@ const router = express.Router()
 const fs = require("fs")
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const chiudbpakage = require("chiudbpakage")
-const login = new chiudbpakage("http://localhost:5000/username=login/token=jjmdosano38nm19nfund83niufnd/password=169hsaiy9duh9dj0adisan/name=loginSystem")
+const chiudbpakage = require("chiudb")
+const { v4: uuidv4 } = require("uuid")
+const DATA_BASE_LINK = "http://localhost:5000"
+const login = new chiudbpakage(DATA_BASE_LINK + "/username=login/token=jjmdosano38nm19nfund83niufnd/password=169hsaiy9duh9dj0adisan/name=loginSystem")
 
 app.listen(5000)
 app.use(cors())
@@ -61,10 +63,34 @@ router.post("/register", async (req, res) => {
     await login.create({
       name: name, password: password,
       dataBase: [],
+      token: uuidv4(),
       creatingAt: Date.now()
     }).then(data => { userData = data.insert }).catch(err => console.log(err))
   }
   res.json({state,userData})
+})
+
+router.post("/createData", async (req, res) => {
+  const { name, password, Dname, Dpassword } = req.body
+  let findUser = await login.MC_findOne({name: name, password: password})
+  const token = uuidv4()
+  if(!findUser) return res.json({state: false})
+  if(findUser.dataBase.length >= 2) return res.json({state: false})
+  findUser.dataBase.push({
+    name: Dname,
+    password: Dpassword,
+    creatingAt: Date.now(),
+    token: token,
+    user: findUser.name
+  })
+  const modify = await login.MC_findOneAndUpdate({
+    name: name, password: password
+  }, {
+    dataBase: findUser.dataBase
+  })
+  var createStream = fs.createWriteStream(`./database/${token}.txt`);
+  createStream.end();
+  res.json({state: true, userData: modify.result })
 })
 
 app.use("/", router)
